@@ -82,12 +82,5 @@ https://github.com/PURSUE2/3118005369
       map.put(key, frequency);
 }`
 
-
-## github的release
-![](https://img2020.cnblogs.com/blog/2149577/202009/2149577-20200925023325642-467498826.png)
-
-## markdown
-![](https://img2020.cnblogs.com/blog/2149577/202009/2149577-20200925023247124-2042335880.png)
-
 ### 最后
 `该代码对应jar包在命令行界面运行时需按如下格式：java -Dfile.encoding=utf-8 -jar project03-1.0-SNAPSHOT.jar D:\test\orig.txt D:\test\orig_0.8_dis_15.txt D:\test\result.txt`
