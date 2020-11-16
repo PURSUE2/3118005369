@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.XOR_encryption">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="21" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="50" width="733" height="816"/>
+    </constraints>
+    <properties/>
+    <border type="bevel-lowered"/>
+    <children>
+      <component id="eb978" class="javax.swing.JTextArea" binding="encryptFileValue">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="bc187" class="javax.swing.JTextArea" binding="decryptStrValue">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="c7ff3" class="javax.swing.JButton" binding="decryptStrButton">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="点击解密"/>
+        </properties>
+      </component>
+      <component id="b7ea8" class="javax.swing.JTextArea" binding="decryptFileValue">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="d6838" class="javax.swing.JLabel" binding="encryptFileInfoLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="请输入需加密文件的完整路径"/>
+        </properties>
+      </component>
+      <component id="990ab" class="javax.swing.JLabel" binding="decryptStrInfoLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="请输入需解密的字符串"/>
+        </properties>
+      </component>
+      <component id="1f230" class="javax.swing.JLabel" binding="decryptFileInfoLabel">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="请输入需解密文件的完整路径"/>
+        </properties>
+      </component>
+      <component id="16d93" class="javax.swing.JLabel" binding="xorEncryption">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="34" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="22" style="1"/>
+          <text value="加密"/>
+        </properties>
+      </component>
+      <component id="7805" class="javax.swing.JLabel" binding="xorDecryption">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="34" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="22" style="1"/>
+          <text value="解密"/>
+        </properties>
+      </component>
+      <component id="70eb4" class="javax.swing.JLabel" binding="encryptStrInfoLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="请输入需加密的字符串"/>
+        </properties>
+      </component>
+      <component id="fd0c1" class="javax.swing.JTextArea" binding="encryptStrValue">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="befb6" class="javax.swing.JButton" binding="encryptStrButton">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="点击加密"/>
+        </properties>
+      </component>
+      <component id="3bbdd" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="40aff" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="7d131" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="76018" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c47a8" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="70f84" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f9106" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8c59c" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e30b9" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="80828" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="baf7c" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8e02e" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="38dcf" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6ce4b" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="418e2" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8da6d" class="javax.swing.JLabel" binding="keyLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="34" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="密钥"/>
+        </properties>
+      </component>
+      <component id="99f1c" class="javax.swing.JTextArea" binding="keyValue">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+          <text value=""/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <component id="b25ec" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="648d7" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="74f55" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="3"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="c8e48" class="javax.swing.JTextArea" binding="encryptStrResult">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="c59f0" class="javax.swing.JTextArea" binding="encryptFileResult">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="9e0df" class="javax.swing.JButton" binding="openFileButton">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="打开文件"/>
+        </properties>
+      </component>
+      <component id="df520" class="javax.swing.JLabel" binding="encryptStrResultLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="字符串加密结果"/>
+        </properties>
+      </component>
+      <component id="1f50e" class="javax.swing.JLabel" binding="encryptFileResultLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="已加密文件的路径"/>
+        </properties>
+      </component>
+      <component id="db45a" class="javax.swing.JTextArea" binding="decryptStrResult">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="bc10b" class="javax.swing.JTextArea" binding="decryptFileResult">
+        <constraints>
+          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="234" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="16"/>
+          <lineWrap value="true"/>
+        </properties>
+      </component>
+      <component id="9db02" class="javax.swing.JButton" binding="chooseFileButton2">
+        <constraints>
+          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="选择文件"/>
+        </properties>
+      </component>
+      <component id="922fa" class="javax.swing.JButton" binding="openFileButton2">
+        <constraints>
+          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="打开文件"/>
+        </properties>
+      </component>
+      <component id="e6a88" class="javax.swing.JLabel" binding="decryptFileResultLabel">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="已解密文件的路径"/>
+        </properties>
+      </component>
+      <component id="fb1af" class="javax.swing.JLabel" binding="decryptStrResultLabel">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="97" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="字符串解密结果"/>
+        </properties>
+      </component>
+      <component id="e6fd" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="31a3a" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="eb619" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="77390" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1223" class="javax.swing.JButton" binding="chooseFileButton">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="选择文件"/>
+        </properties>
+      </component>
+      <component id="f2dc9" class="javax.swing.JButton" binding="encryptFileButton">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="129" height="26"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="点击加密"/>
+        </properties>
+      </component>
+      <component id="d911a" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e3907" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="5a5a5" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1a2e1" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="716f1" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="90a5d" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="17" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="881af" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="49c4c" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="87309" class="javax.swing.JButton" binding="decryptFileButton">
+        <constraints>
+          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="18"/>
+          <text value="点击解密"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
