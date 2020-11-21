@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="project08_public_key_algorithm:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/project08_public_key_algorithm_jar</output-path>
+    <root id="archive" name="project08_public_key_algorithm.jar">
+      <element id="module-output" name="project08_public_key_algorithm" />
+    </root>
+  </artifact>
+</component>
